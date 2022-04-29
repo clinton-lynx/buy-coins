@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+a:focus {
+  border: none;
+  outline: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto";
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'wire one';
+  src: url(../fonts/WireOne-Regular.ttf);
+  font-weight: 19000;
+}
+
+.nav-menu-wrapper {
+  background-color: #fafbfd;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 2.2rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 53rem;
+  text-transform: capitalize;
+}
+
+.logo h1 {
+  text-transform: lowercase;
+  font-size: 2.6rem;
+}
+
+.main-nav__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-nav__nav-list li a {
+  margin: 0 0.6em;
+  color: #04000c;
+  font-weight: 500;
+}
+
+.main-nav__nav-list li a:hover {
+  color: #b38cfc;
+}
+
+.main-nav__nav-list li:last-child a {
+  border-radius: 10px;
+  background-color: #b38cfc;
+  padding: 1.2rem 2rem;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  -webkit-transition: 0.3 ease;
+  transition: 0.3 ease;
+}
+
+.main-nav__nav-list li:last-child a:hover {
+  -webkit-box-shadow: 2px 4px 20px rgba(179, 140, 252, 0.2);
+          box-shadow: 2px 4px 20px rgba(179, 140, 252, 0.2);
+}
+
+.main-nav__mobile-menu {
+  display: none;
+}
+
+.hero {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.hero__text-wrapper {
+  max-width: 500px;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+}
+
+.hero__title {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 15ch;
+  padding-top: 5rem;
+  -webkit-perspective: 3000px;
+          perspective: 3000px;
+  width: 100%;
+  color: inherit;
+  font-size: 7rem;
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: 0.95;
+}
+
+.hero__paragraph {
+  margin: 2.2em 1.2em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.hero__link {
+  padding: 1.8rem 4rem;
+  border-radius: 10px;
+  background-color: #b38cfc;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.hero__link:hover {
+  -webkit-box-shadow: 2px 4px 20px rgba(179, 140, 252, 0.2);
+          box-shadow: 2px 4px 20px rgba(179, 140, 252, 0.2);
+}
+
+.hero__background-image {
+  margin-top: -5rem;
+}
+
+.hero__background-image-wrapper {
+  position: relative;
+}
+
+.hero__background-image--mobile {
+  display: none;
+}
+
+.hero__phone-image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  left: 10%;
+  width: 70%;
+}
+
+.hero__phone-image--light {
+  width: 33%;
+}
+
+.hero__phone-image--light img {
+  height: 100%;
+  max-height: 75%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  position: absolute;
+  top: 1rem;
+  left: 33%;
+  max-width: 100%;
+  z-index: 0;
+}
+
+.hero__phone-image--light img:hover {
+  -webkit-transform: rotateY(-1.5deg) rotate(-15deg);
+          transform: rotateY(-1.5deg) rotate(-15deg);
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease, -webkit-transform .4s ease;
+  z-index: 1;
+}
+
+.hero__phone-image--dark {
+  width: 39%;
+}
+
+.hero__phone-image--dark img {
+  -webkit-filter: drop-shadow(-12.5193px 12.5193px 37.5579px rgba(74, 77, 86, 0.2));
+          filter: drop-shadow(-12.5193px 12.5193px 37.5579px rgba(74, 77, 86, 0.2));
+  -o-object-fit: contain;
+  object-fit: contain;
+  max-width: 100%;
+  z-index: 1;
+  -webkit-transition: -webkit-transform .4s ease;
+  transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease, -webkit-transform .4s ease;
+}
+
+.hero__phone-image--dark img:hover {
+  -webkit-transform: rotateX(-1deg) rotateY(0deg) rotate(7.5deg);
+          transform: rotateX(-1deg) rotateY(0deg) rotate(7.5deg);
+  z-index: -1;
+}
+
+.first-section {
+  margin: 6rem 0;
+  padding: 0 rem;
+}
+
+.first-section__small-title {
+  font-weight: 600;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+  color: #fa7a43;
+  font-size: 1.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+
+.first-section__big-title {
+  color: inherit;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  line-height: 1.05;
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav__nav-list {
+    display: none;
+  }
+  .main-nav__mobile-menu {
+    display: block;
+  }
+  .hero__background-image {
+    display: none;
+  }
+  .hero__background-image--mobile {
+    display: block;
+  }
+  html {
+    font-size: 45%;
+  }
+}
