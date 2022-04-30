@@ -27,6 +27,9 @@
   &:hover {
     color: #b38cfc;
   }
+  img{
+    width:12px;
+  }
 }
 .main-nav__nav-list li:last-child a {
   border-radius: 10px;
@@ -58,7 +61,7 @@
 .hero__title {
   margin-left: auto;
   margin-right: auto;
-  max-width: 15ch;
+  max-width: 12ch;
   padding-top: 5rem;
   perspective: 3000px;
   width: 100%;
@@ -67,6 +70,41 @@
   font-weight: 600;
   letter-spacing: -2px;
   line-height: 0.95;
+}
+
+.hero__title span{
+  animation: scaleUp 1.4s ease 1 normal forwards .4s;
+}
+@keyframes scaleUp {
+  0%{
+    filter:blur(10px);
+    opacity:0;
+
+  }
+  25%{
+    filter:blur(10px);
+    opacity:.4;
+
+  }
+50%{
+    filter:blur(10px);
+    opacity:.7;
+
+  }
+
+
+  75%{
+    transform: translateY(0) scale(1);
+  }
+  85%{
+        opacity: 1;
+    transform: translateY(2px) scale(.99);
+  }
+  100%{
+        filter: blur(0);
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 .hero__paragraph {
   margin: 2.2em 1.2em;
@@ -84,11 +122,39 @@
   border: none;
   color: #fff;
   font-weight: 500;
+  animation: fall-In .35s ease 1.5s 1 normal both;
   transition: all 0.3s ease;
   &:hover {
     box-shadow: 2px 4px 20px rgba(179, 140, 252, 0.2);
   }
 }
+@keyframes fall-In{
+  0%{
+        opacity: 0;
+    transform: translateY(-10px) scaleY(1.5);
+  }
+  100%{
+        opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
+.hero__text{
+  animation-name: fadeIn;
+  animation-duration: .4s;
+  animation-delay: 1.2s;
+  animation-fill-mode: both;
+}
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translateY(10px);
+  }
+ 100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 .hero__background-image{
    margin-top:-5rem; 
 }
