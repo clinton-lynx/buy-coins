@@ -458,8 +458,9 @@ img {
 
 .first-section__card {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 180px;
-          flex: 1 1 180px;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  min-width: 250px;
   width: 31.3%;
   margin: 1%;
   background-color: #fff;
@@ -486,6 +487,132 @@ img {
   line-height: 1.4;
 }
 
+.second-section {
+  padding: 0 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 4rem 0;
+}
+
+.second-section__image {
+  width: 45%;
+  margin: 0.5%;
+}
+
+.second-section__text-wrapper {
+  width: 49%;
+  text-align: left;
+  margin: 0.5%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  margin-left: 8rem;
+}
+
+.second-section__title {
+  margin-bottom: 1.2rem;
+  color: inherit;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  line-height: 1.05;
+}
+
+.second-section__number-title {
+  color: inherit;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.second-section__number-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.second-section__number-text-wrapper {
+  padding-left: 5rem;
+}
+
+.second-section__number-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second-section__number-small-text {
+  opacity: 0.8;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+
+.number {
+  color: inherit;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  line-height: 1.05;
+  background-color: var(--timeline-bg, #fff);
+  color: #b38cfc;
+  font-variant-numeric: tabular-nums;
+  height: 100%;
+  letter-spacing: -1px;
+  line-height: 1.4;
+  max-width: 48px;
+  width: 100%;
+}
+
+.second-section__number-title {
+  color: inherit;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 768px) {
   .main-nav__nav-list {
     display: none;
@@ -504,6 +631,55 @@ img {
   }
   .first-section__big-title {
     font-size: 2.8rem;
+  }
+  .first-section__card-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .first-section__card {
+    width: 100%;
+  }
+  .second-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 3rem;
+  }
+  .second-section__number-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .number {
+    padding: 0;
+  }
+  .second-section__text-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+  .second-section__image {
+    width: 70%;
   }
   html {
     font-size: 48%;

@@ -240,7 +240,7 @@
   letter-spacing: -1.2px;
   line-height: 1.05;
 }
-.first-section__intro-text{
+.first-section__intro-text {
   margin: 6rem 0;
 }
 .first-section__card-wrapper {
@@ -255,7 +255,8 @@
   padding: 7rem 2rem;
 }
 .first-section__card {
-  flex: 1 1 180px;
+  flex: 1 1 0;
+  min-width: 250px;
   width: 31.3%;
   margin: 1%;
   background-color: #fff;
@@ -277,6 +278,77 @@
   font-weight: 400;
   line-height: 1.4;
 }
+.second-section {
+  padding: 0 5rem;
+  @include flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 4rem 0;
+}
+.second-section__image {
+  width: 45%;
+  margin: 0.5%;
+}
+.second-section__text-wrapper {
+  width: 49%;
+  text-align: left;
+  margin: 0.5%;
+  flex: 1 1 300px;
+  margin-left: 8rem;
+}
+.second-section__title {
+  margin-bottom: 1.2rem;
+  color: inherit;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  line-height: 1.05;
+}
+.second-section__number-title {
+  color: inherit;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.second-section__number-text {
+  @include flex;
+  padding: 2rem 0;
+  align-items: flex-start;
+  justify-content: center;
+}
+.second-section__number-text-wrapper {
+  padding-left: 5rem;
+}
+.second-section__number-wrapper {
+  @include columnFlex;
+}
+.second-section__number-small-text {
+  opacity: 0.8;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+.number {
+  // padding:0 5rem;
+  color: inherit;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  line-height: 1.05;
+  background-color: var(--timeline-bg, #fff);
+  color: #b38cfc;
+  font-variant-numeric: tabular-nums;
+  height: 100%;
+  letter-spacing: -1px;
+  line-height: 1.4;
+  max-width: 48px;
+  width: 100%;
+}
+.second-section__number-title {
+  color: inherit;
+  font-size: 2rem;
+  font-weight: 600;
+}
 @media screen and (max-width: 768px) {
   .main-nav__nav-list {
     display: none;
@@ -295,6 +367,29 @@
   }
   .first-section__big-title {
     font-size: 2.8rem;
+  }
+  .first-section__card-wrapper{
+    @include columnFlex;
+  }
+  .first-section__card{
+    width:100%;
+  }
+  .second-section{
+@include columnFlex;
+padding: 0 3rem;
+  }
+  .second-section__number-wrapper{
+    align-items: flex-start;
+  }
+  .number{
+    padding:0 ;
+  }
+  .second-section__text-wrapper{
+    width:100%;
+    margin:0;
+  }
+  .second-section__image{
+    width: 70%;
   }
   html {
     font-size: 48%;
