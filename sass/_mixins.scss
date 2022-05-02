@@ -4,6 +4,12 @@
     justify-content: space-between;
     align-items: center;
 }
+@mixin columnFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
 @mixin btn {
     padding: .6em .9em;
     border-radius: .9em;
