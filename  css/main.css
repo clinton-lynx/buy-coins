@@ -613,6 +613,114 @@ img {
   font-weight: 600;
 }
 
+.third-section__col-one {
+  text-align: left;
+  width: 49%;
+  margin: .5%;
+  padding: 0 2rem;
+}
+
+.third-section__col-title {
+  margin-bottom: 4rem;
+  color: inherit;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  line-height: 1.05;
+}
+
+.third-section__flex-items-title {
+  color: inherit;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.third-section__flex-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.third-section__flex-items-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  padding: 12px;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  width: 100%;
+  background-color: #04000c;
+  border: 2px solid rgba(179, 140, 252, 0.1);
+  margin-right: 1.2rem;
+  color: #fff;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.third-section__flex-items-link img {
+  min-width: 27px;
+}
+
+.third-section__col-two {
+  width: 49%;
+  margin: 0.5%;
+  padding: 0 2rem;
+}
+
+.third-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fafafa;
+  padding: 6rem;
+  flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5rem;
+}
+
 @media screen and (max-width: 768px) {
   .main-nav__nav-list {
     display: none;
