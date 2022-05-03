@@ -396,12 +396,35 @@
  }
  .third-section{
    @include flex;
-  //  width:90%;
       background-color: #fafafa;
       padding:6rem;
    flex-direction: row;
    justify-content: center;
    margin-bottom:5rem;
+ }
+ .fourth-section{
+   @extend .third-section;
+   flex-direction: row-reverse;
+       background-color: #0b011c;
+    color: #fff;
+ }
+ .fourth-section__col-one{
+   @extend .third-section__col-one;
+ }
+  .fourth-section__col-two{
+   @extend  .third-section__col-two;
+ }
+ .fourth-section__flex-items-link{
+   @extend .third-section__flex-items-link;
+ }
+ .fourth-section__flex-items{
+   @extend .third-section__flex-items;
+ }
+ .fourth-section__flex-items-title{
+   @extend .third-section__flex-items-title;
+ }
+ .fourth-section__col-title{
+   @extend .third-section__col-title;
  }
 @media screen and (max-width: 768px) {
   .main-nav__nav-list {
