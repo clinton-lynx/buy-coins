@@ -704,6 +704,22 @@
   .number {
     padding: 0;
   }
+  .second-section__title{
+        font-size: 2.8rem;   
+  }
+  .api-section__col-one-title{
+        font-size: 2.8rem;
+  }
+  .fourth-section__col-title{
+        font-size: 2.8rem;
+  }
+  .product-section__title{
+        font-size: 2.8rem;
+  }
+  .third-section__col-title{
+        font-size: 2.8rem;
+  }
+  
 
   .second-section__text-wrapper {
     width: 100%;
@@ -722,7 +738,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 05rem .8rem;
+    padding: 05rem 1.2rem;
 
     .footer__nav-list {
       padding: 1rem 0;
